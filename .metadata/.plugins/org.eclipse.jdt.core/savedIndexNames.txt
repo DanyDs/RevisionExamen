@@ -15,7 +15,6 @@ INDEX VERSION 1.129+C:\ArquiEclipse\.metadata\.plugins\org.eclipse.jdt.core
 4089353016.index
 1681516525.index
 3664643240.index
-1184083339.index
 286217041.index
 3306367843.index
 1446438141.index

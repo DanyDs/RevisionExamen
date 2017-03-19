@@ -2,3 +2,7 @@
 1489938405690	Extract method 'addRenterName'
 1489938523594	Extract method 'addFrequentRenterPoints'
 1489938767687	Extract method 'addFooterLines'
+1489953566891	Extract method 'calculatePriceForMovie'
+1489953989590	Extract method 'addMovieTitleAndAmount'
+1489954224479	Extract method 'addBonusForTwoDaysNewRelease'
+1489954636953	Extract method 'getResultsForMovies'

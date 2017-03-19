@@ -1,7 +1,7 @@
 import java.util.Enumeration;
 import java.util.Vector;
 
-public class Customer {
+public class Customer implements MovieAmount {
 
 	private String customerName;
 	private Vector rentals = new Vector();

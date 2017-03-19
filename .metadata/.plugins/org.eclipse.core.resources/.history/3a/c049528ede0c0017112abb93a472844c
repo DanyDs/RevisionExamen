@@ -26,61 +26,42 @@ public class Customer {
 		Enumeration rentals = this.rentals.elements();
 		String result = addRenterName();
 
-		result = getResultsForMovies(rentals, result);
-
-		// add footer lines
-		result = addFooterLines(result);
-
-		return result;
-	}
-
-	private String getResultsForMovies(Enumeration rentals, String result) {
 		while (rentals.hasMoreElements()) {
 			double thisAmount = 0;
 			Rental each = (Rental) rentals.nextElement();
 
 			//determine amounts for each line
-			thisAmount = calculatePriceForMovie(thisAmount, each);
+			switch (each.getMovie().getPriceCode()) {
+			case Movie.REGULAR:
+				thisAmount += 2;
+				if (each.getDaysRented() > 2)
+					thisAmount += (each.getDaysRented() - 2) * 1.5;
+				break;
+			case Movie.NEW_RELEASE:
+				thisAmount += each.getDaysRented() * 3;
+				break;
+			case Movie.CHILDRENS:
+				thisAmount += 1.5;
+				if (each.getDaysRented() > 3)
+					thisAmount += (each.getDaysRented() - 3) * 1.5;
+				break;
+			}
 
 			// add frequent renter points
 			addFrequentRenterPoints();
 			// add bonus for a two day new release rental
-			addBonusForTwoDaysNewRelease(each);
+			if ((each.getMovie().getPriceCode() == Movie.NEW_RELEASE) && each.getDaysRented() > 1)
+				addFrequentRenterPoints();
 
 			// show figures for this rental
-			result = addMovieTitleAndAmount(result, thisAmount, each);
+			result += "\t" + each.getMovie().getTitle() + "\t" + String.valueOf(thisAmount) + "\n";
 			totalAmount += thisAmount;
 		}
+
+		// add footer lines
+		result = addFooterLines(result);
+
 		return result;
-	}
-
-	private void addBonusForTwoDaysNewRelease(Rental each) {
-		if ((each.getMovie().getPriceCode() == Movie.NEW_RELEASE) && each.getDaysRented() > 1)
-			addFrequentRenterPoints();
-	}
-
-	private String addMovieTitleAndAmount(String result, double thisAmount, Rental each) {
-		result += "\t" + each.getMovie().getTitle() + "\t" + String.valueOf(thisAmount) + "\n";
-		return result;
-	}
-
-	private double calculatePriceForMovie(double thisAmount, Rental each) {
-		switch (each.getMovie().getPriceCode()) {
-		case Movie.REGULAR:
-			thisAmount += 2;
-			if (each.getDaysRented() > 2)
-				thisAmount += (each.getDaysRented() - 2) * 1.5;
-			break;
-		case Movie.NEW_RELEASE:
-			thisAmount += each.getDaysRented() * 3;
-			break;
-		case Movie.CHILDRENS:
-			thisAmount += 1.5;
-			if (each.getDaysRented() > 3)
-				thisAmount += (each.getDaysRented() - 3) * 1.5;
-			break;
-		}
-		return thisAmount;
 	}
 
 	private String addFooterLines(String result) {

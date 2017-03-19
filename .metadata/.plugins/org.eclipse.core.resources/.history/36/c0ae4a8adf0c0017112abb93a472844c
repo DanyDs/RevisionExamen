@@ -26,15 +26,6 @@ public class Customer {
 		Enumeration rentals = this.rentals.elements();
 		String result = addRenterName();
 
-		result = getResultsForMovies(rentals, result);
-
-		// add footer lines
-		result = addFooterLines(result);
-
-		return result;
-	}
-
-	private String getResultsForMovies(Enumeration rentals, String result) {
 		while (rentals.hasMoreElements()) {
 			double thisAmount = 0;
 			Rental each = (Rental) rentals.nextElement();
@@ -45,22 +36,17 @@ public class Customer {
 			// add frequent renter points
 			addFrequentRenterPoints();
 			// add bonus for a two day new release rental
-			addBonusForTwoDaysNewRelease(each);
+			if ((each.getMovie().getPriceCode() == Movie.NEW_RELEASE) && each.getDaysRented() > 1)
+				addFrequentRenterPoints();
 
 			// show figures for this rental
-			result = addMovieTitleAndAmount(result, thisAmount, each);
+			result += "\t" + each.getMovie().getTitle() + "\t" + String.valueOf(thisAmount) + "\n";
 			totalAmount += thisAmount;
 		}
-		return result;
-	}
 
-	private void addBonusForTwoDaysNewRelease(Rental each) {
-		if ((each.getMovie().getPriceCode() == Movie.NEW_RELEASE) && each.getDaysRented() > 1)
-			addFrequentRenterPoints();
-	}
+		// add footer lines
+		result = addFooterLines(result);
 
-	private String addMovieTitleAndAmount(String result, double thisAmount, Rental each) {
-		result += "\t" + each.getMovie().getTitle() + "\t" + String.valueOf(thisAmount) + "\n";
 		return result;
 	}
 

@@ -1,0 +1,12 @@
+import java.util.Vector;
+
+public class MovieRegular {
+	public String customerName;
+	public Vector rentals;
+	public double totalAmount;
+	public int frequentRenterPoints;
+
+	public MovieRegular(Vector rentals) {
+		this.rentals = rentals;
+	}
+}

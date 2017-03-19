@@ -3,27 +3,24 @@ import java.util.Vector;
 
 public class Customer {
 
-	private String customerName;
-	private Vector rentals = new Vector();
-	private double totalAmount;
-	private int frequentRenterPoints;
+	private MovieRegular data = new MovieRegular(new Vector());
 
 	public Customer(String customerName) {
-		this.customerName = customerName;
+		this.data.customerName = customerName;
 	}
 
 	public void addRental(Rental arg) {
-		rentals.addElement(arg);
+		data.rentals.addElement(arg);
 	}
 
 	public String getName() {
-		return customerName;
+		return data.customerName;
 	}
 
 	public String generateRenterInformation() {
-		totalAmount = 0;
-		frequentRenterPoints = 0;
-		Enumeration rentals = this.rentals.elements();
+		data.totalAmount = 0;
+		data.frequentRenterPoints = 0;
+		Enumeration rentals = this.data.rentals.elements();
 		String result = addRenterName();
 
 		result = getResultsForMovies(rentals, result);
@@ -49,7 +46,7 @@ public class Customer {
 
 			// show figures for this rental
 			result = addMovieTitleAndAmount(result, thisAmount, each);
-			totalAmount += thisAmount;
+			data.totalAmount += thisAmount;
 		}
 		return result;
 	}
@@ -84,13 +81,13 @@ public class Customer {
 	}
 
 	private String addFooterLines(String result) {
-		result += "Amount owed is " + String.valueOf(totalAmount) + "\n";
-		result += "You earned " + String.valueOf(frequentRenterPoints) + " frequent renter points";
+		result += "Amount owed is " + String.valueOf(data.totalAmount) + "\n";
+		result += "You earned " + String.valueOf(data.frequentRenterPoints) + " frequent renter points";
 		return result;
 	}
 
 	private void addFrequentRenterPoints() {
-		frequentRenterPoints++;
+		data.frequentRenterPoints++;
 	}
 
 	private String addRenterName() {
@@ -99,10 +96,10 @@ public class Customer {
 	}
 
 	public double getTotal() {
-		return totalAmount;
+		return data.totalAmount;
 	}
 
 	public int getFrequentRenterPoints() {
-		return frequentRenterPoints;
+		return data.frequentRenterPoints;
 	}
 }
