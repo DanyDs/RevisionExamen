@@ -6,3 +6,9 @@
 1489953989590	Extract method 'addMovieTitleAndAmount'
 1489954224479	Extract method 'addBonusForTwoDaysNewRelease'
 1489954636953	Extract method 'getResultsForMovies'
+1489956548165	Rename method 'calculatePriceForMovie'
+1489956710017	Delete element
+1489956715154	Delete element
+1489957340579	Extract Class...
+1489957846053	Delete element
+1489957939189	Extract Class...

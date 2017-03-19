@@ -1,0 +1,7 @@
+
+public interface MovieAmount {
+	static int calculateDaysRentedAmount(int amount, Rental each){
+		
+	}
+
+}

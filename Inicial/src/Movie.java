@@ -5,24 +5,42 @@ public class Movie {
 	public static final int NEW_RELEASE = 1;
 	public static final int REGULAR = 0;
 
-	private String _title;
-	private int _priceCode;
+	private MovieType data = new MovieType();
 
 	public Movie(String title, int priceCode) {
-		_title = title;
-		_priceCode = priceCode;
+		data._title = title;
+		data._priceCode = priceCode;
 	}
 
 	public int getPriceCode() {
-		return _priceCode;
+		return data._priceCode;
 	}
 
 	public void setPriceCode(int arg) {
-		_priceCode = arg;
+		data._priceCode = arg;
 	}
 	public String getTitle() {
-		return _title;
+		return data._title;
 	}
-
+	
+	public double calculateAmount(Rental each, double thisAmount){
+		switch (each.getMovie().getPriceCode()) {
+		case Movie.REGULAR:
+			thisAmount += 2;
+			if (each.getDaysRented() > 2)
+				thisAmount += (each.getDaysRented() - 2) * 1.5;
+			break;
+		case Movie.NEW_RELEASE:
+			thisAmount += each.getDaysRented() * 3;
+			break;
+		case Movie.CHILDRENS:
+			thisAmount += 1.5;
+			if (each.getDaysRented() > 3)
+				thisAmount += (each.getDaysRented() - 3) * 1.5;
+			break;
+		}
+		return thisAmount;
+	}
+	
 
 }

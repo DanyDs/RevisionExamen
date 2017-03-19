@@ -1,0 +1,8 @@
+
+public class MovieType {
+	public RegularMovie data;
+
+	public MovieType(RegularMovie data) {
+		this.data = data;
+	}
+}

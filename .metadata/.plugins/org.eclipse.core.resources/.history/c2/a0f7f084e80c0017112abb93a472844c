@@ -1,0 +1,8 @@
+
+public class RegularMovie {
+	public String _title;
+	public int _priceCode;
+
+	public RegularMovie() {
+	}
+}

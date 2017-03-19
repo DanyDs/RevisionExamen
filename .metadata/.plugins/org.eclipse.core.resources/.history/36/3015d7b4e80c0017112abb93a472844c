@@ -1,0 +1,8 @@
+
+public class NewReleaseMovie {
+	public RegularMovie data;
+
+	public NewReleaseMovie(RegularMovie data) {
+		this.data = data;
+	}
+}

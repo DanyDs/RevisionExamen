@@ -1,0 +1,15 @@
+
+public class NewReleaseMovie extends Movie {
+
+	public NewReleaseMovie(String title, int priceCode) {
+		super(title, priceCode);
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	int calculateDaysRentedAmount(int amount, Rental each) {
+		amount += each.getDaysRented() * 3;
+		return 0;
+	}
+
+}
