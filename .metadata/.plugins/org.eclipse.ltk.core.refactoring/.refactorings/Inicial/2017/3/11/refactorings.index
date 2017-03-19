@@ -1,0 +1,4 @@
+1489894178730	Rename method 'generate'
+1489938405690	Extract method 'addRenterName'
+1489938523594	Extract method 'addFrequentRenterPoints'
+1489938767687	Extract method 'addFooterLines'
