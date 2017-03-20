@@ -15,7 +15,7 @@ public class CustomerTest {
 
 	@Test
 	public void testSingleNewReleaseStatementTotals() {
-		customer.addRental(new Rental(new NewReleaseMovie("The Cell", Movie.NEW_RELEASE), 3));
+		customer.addRental(new Rental(new Movie("The Cell", Movie.NEW_RELEASE), 3));
 		customer.generateRenterInformation();
 		assertEquals(9.0, customer.getTotal(), DELTA);
 		assertEquals(2, customer.getFrequentRenterPoints());

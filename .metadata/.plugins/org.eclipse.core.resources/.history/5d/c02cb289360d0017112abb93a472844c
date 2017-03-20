@@ -15,7 +15,7 @@ public class CustomerTest {
 
 	@Test
 	public void testSingleNewReleaseStatementTotals() {
-		customer.addRental(new Rental(new NewReleaseMovie("The Cell", Movie.NEW_RELEASE), 3));
+		customer.addRental(new Rental(new RegularMovie("The Cell", Movie.NEW_RELEASE), 3));
 		customer.generateRenterInformation();
 		assertEquals(9.0, customer.getTotal(), DELTA);
 		assertEquals(2, customer.getFrequentRenterPoints());
@@ -23,8 +23,8 @@ public class CustomerTest {
 	
 	@Test
 	public void testDualNewReleaseStatementTotals() {
-		customer.addRental(new Rental(new NewReleaseMovie("The Cell", Movie.NEW_RELEASE), 3));
-		customer.addRental(new Rental(new NewReleaseMovie("The Tigger Movie", Movie.NEW_RELEASE), 3));
+		customer.addRental(new Rental(new RegularMovie("The Cell", Movie.NEW_RELEASE), 3));
+		customer.addRental(new Rental(new RegularMovie("The Tigger Movie", Movie.NEW_RELEASE), 3));
 		customer.generateRenterInformation();
 		assertEquals(18.0, customer.getTotal(), DELTA);
 		assertEquals(4, customer.getFrequentRenterPoints());
@@ -33,7 +33,7 @@ public class CustomerTest {
 
 	@Test
 	public void testSingleChildrensStatementTotals() {
-		customer.addRental(new Rental(new ChildrensMovie("The Tiger Movie", Movie.CHILDRENS), 3));
+		customer.addRental(new Rental(new RegularMovie("The Tiger Movie", Movie.CHILDRENS), 3));
 		customer.generateRenterInformation();
 		assertEquals(1.5, customer.getTotal(), DELTA);
 		assertEquals(1, customer.getFrequentRenterPoints());

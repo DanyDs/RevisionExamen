@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="CustomerTest" project="Inicial" tests="5" started="5" failures="5" errors="0" ignored="0">
+  <testsuite name="CustomerTest" time="0.037">
+    <testcase name="testDualNewReleaseStatementTotals" classname="CustomerTest" time="0.001">
+      <failure>java.lang.AssertionError: expected:&lt;18.0&gt; but was:&lt;25.0&gt;&#13;
+	at org.junit.Assert.fail(Assert.java:88)&#13;
+	at org.junit.Assert.failNotEquals(Assert.java:834)&#13;
+	at org.junit.Assert.assertEquals(Assert.java:553)&#13;
+	at org.junit.Assert.assertEquals(Assert.java:683)&#13;
+	at CustomerTest.testDualNewReleaseStatementTotals(CustomerTest.java:29)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)&#13;
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)&#13;
+	at java.lang.reflect.Method.invoke(Unknown Source)&#13;
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)&#13;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)&#13;
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)&#13;
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)&#13;
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)&#13;
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)&#13;
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)&#13;
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)&#13;
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)&#13;
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)&#13;
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)&#13;
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:678)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)&#13;
+&#13;
+</failure>
+    </testcase>
+    <testcase name="testSingleChildrensStatementTotals" classname="CustomerTest" time="0.001">
+      <failure>java.lang.AssertionError: expected:&lt;1.5&gt; but was:&lt;5.0&gt;&#13;
+	at org.junit.Assert.fail(Assert.java:88)&#13;
+	at org.junit.Assert.failNotEquals(Assert.java:834)&#13;
+	at org.junit.Assert.assertEquals(Assert.java:553)&#13;
+	at org.junit.Assert.assertEquals(Assert.java:683)&#13;
+	at CustomerTest.testSingleChildrensStatementTotals(CustomerTest.java:38)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)&#13;
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)&#13;
+	at java.lang.reflect.Method.invoke(Unknown Source)&#13;
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)&#13;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)&#13;
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)&#13;
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)&#13;
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)&#13;
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)&#13;
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)&#13;
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)&#13;
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)&#13;
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)&#13;
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)&#13;
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:678)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)&#13;
+&#13;
+</failure>
+    </testcase>
+    <testcase name="testMultipleRegularStatementFormat" classname="CustomerTest" time="0.032">
+      <failure>
+        <expected>Rental Record for Customer
+	Plan 9 from Outer Space	2.0
+	8 1/2	2.0
+	Eraserhead	3.5
+Amount owed is 7.5
+You earned 3 frequent renter points</expected>
+        <actual>Rental Record for Customer
+	Plan 9 from Outer Space	4.0
+	8 1/2	4.0
+	Eraserhead	7.0
+Amount owed is 15.0
+You earned 3 frequent renter points</actual>org.junit.ComparisonFailure: expected:&lt;... 9 from Outer Space	[2.0
+	8 1/2	2.0
+	Eraserhead	3.5
+Amount owed is 7.5]
+You earned 3 freque...&gt; but was:&lt;... 9 from Outer Space	[4.0
+	8 1/2	4.0
+	Eraserhead	7.0
+Amount owed is 15.0]
+You earned 3 freque...&gt;&#13;
+	at org.junit.Assert.assertEquals(Assert.java:115)&#13;
+	at org.junit.Assert.assertEquals(Assert.java:144)&#13;
+	at CustomerTest.testMultipleRegularStatementFormat(CustomerTest.java:59)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)&#13;
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)&#13;
+	at java.lang.reflect.Method.invoke(Unknown Source)&#13;
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)&#13;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)&#13;
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)&#13;
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)&#13;
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)&#13;
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)&#13;
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)&#13;
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)&#13;
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)&#13;
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)&#13;
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)&#13;
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:678)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)&#13;
+&#13;
+</failure>
+    </testcase>
+    <testcase name="testMultipleRegularStatementTotals" classname="CustomerTest" time="0.0">
+      <failure>java.lang.AssertionError: expected:&lt;7.5&gt; but was:&lt;15.0&gt;&#13;
+	at org.junit.Assert.fail(Assert.java:88)&#13;
+	at org.junit.Assert.failNotEquals(Assert.java:834)&#13;
+	at org.junit.Assert.assertEquals(Assert.java:553)&#13;
+	at org.junit.Assert.assertEquals(Assert.java:683)&#13;
+	at CustomerTest.testMultipleRegularStatementTotals(CustomerTest.java:49)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)&#13;
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)&#13;
+	at java.lang.reflect.Method.invoke(Unknown Source)&#13;
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)&#13;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)&#13;
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)&#13;
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)&#13;
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)&#13;
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)&#13;
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)&#13;
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)&#13;
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)&#13;
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)&#13;
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)&#13;
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:678)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)&#13;
+&#13;
+</failure>
+    </testcase>
+    <testcase name="testSingleNewReleaseStatementTotals" classname="CustomerTest" time="0.0">
+      <failure>java.lang.AssertionError: expected:&lt;9.0&gt; but was:&lt;12.5&gt;&#13;
+	at org.junit.Assert.fail(Assert.java:88)&#13;
+	at org.junit.Assert.failNotEquals(Assert.java:834)&#13;
+	at org.junit.Assert.assertEquals(Assert.java:553)&#13;
+	at org.junit.Assert.assertEquals(Assert.java:683)&#13;
+	at CustomerTest.testSingleNewReleaseStatementTotals(CustomerTest.java:20)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)&#13;
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)&#13;
+	at java.lang.reflect.Method.invoke(Unknown Source)&#13;
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)&#13;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)&#13;
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)&#13;
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)&#13;
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)&#13;
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)&#13;
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)&#13;
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)&#13;
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)&#13;
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)&#13;
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)&#13;
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:678)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)&#13;
+&#13;
+</failure>
+    </testcase>
+  </testsuite>
+</testrun>

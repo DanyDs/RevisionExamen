@@ -1,0 +1,21 @@
+
+public abstract class MovieType {
+	public String _title;
+	public int _priceCode;
+	public int type;
+
+	public int getType() {
+		return type;
+	}
+
+	public void setType(int type) {
+		this.type = type;
+	}
+
+	public MovieType(int type) {
+		super();
+		this.type = type;
+	}
+	
+	abstract int calculateAmount(double amount, Rental each);
+}

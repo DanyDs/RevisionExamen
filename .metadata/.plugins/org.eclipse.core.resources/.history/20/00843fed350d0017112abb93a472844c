@@ -15,7 +15,7 @@ public class CustomerTest {
 
 	@Test
 	public void testSingleNewReleaseStatementTotals() {
-		customer.addRental(new Rental(new NewReleaseMovie("The Cell", Movie.NEW_RELEASE), 3));
+		customer.addRental(new Rental(new Movie("The Cell", Movie.NEW_RELEASE), 3));
 		customer.generateRenterInformation();
 		assertEquals(9.0, customer.getTotal(), DELTA);
 		assertEquals(2, customer.getFrequentRenterPoints());
@@ -23,8 +23,8 @@ public class CustomerTest {
 	
 	@Test
 	public void testDualNewReleaseStatementTotals() {
-		customer.addRental(new Rental(new NewReleaseMovie("The Cell", Movie.NEW_RELEASE), 3));
-		customer.addRental(new Rental(new NewReleaseMovie("The Tigger Movie", Movie.NEW_RELEASE), 3));
+		customer.addRental(new Rental(new Movie("The Cell", Movie.NEW_RELEASE), 3));
+		customer.addRental(new Rental(new Movie("The Tigger Movie", Movie.NEW_RELEASE), 3));
 		customer.generateRenterInformation();
 		assertEquals(18.0, customer.getTotal(), DELTA);
 		assertEquals(4, customer.getFrequentRenterPoints());
@@ -33,7 +33,7 @@ public class CustomerTest {
 
 	@Test
 	public void testSingleChildrensStatementTotals() {
-		customer.addRental(new Rental(new ChildrensMovie("The Tiger Movie", Movie.CHILDRENS), 3));
+		customer.addRental(new Rental(new Movie("The Tiger Movie", Movie.CHILDRENS), 3));
 		customer.generateRenterInformation();
 		assertEquals(1.5, customer.getTotal(), DELTA);
 		assertEquals(1, customer.getFrequentRenterPoints());
@@ -41,9 +41,9 @@ public class CustomerTest {
 	
 	@Test
 	public void testMultipleRegularStatementTotals() {
-		customer.addRental(new Rental(new RegularMovie("Plan 9 from Outer Space", Movie.REGULAR), 1));
-		customer.addRental(new Rental(new RegularMovie("8 1/2", Movie.REGULAR), 2));
-		customer.addRental(new Rental(new RegularMovie("Eraserhead", Movie.REGULAR), 3));
+		customer.addRental(new Rental(new Movie("Plan 9 from Outer Space", Movie.REGULAR), 1));
+		customer.addRental(new Rental(new Movie("8 1/2", Movie.REGULAR), 2));
+		customer.addRental(new Rental(new Movie("Eraserhead", Movie.REGULAR), 3));
 		
 		customer.generateRenterInformation();
 		assertEquals(7.5, customer.getTotal(), DELTA);
@@ -52,9 +52,9 @@ public class CustomerTest {
 	
 	@Test
 	public void testMultipleRegularStatementFormat() {
-		customer.addRental(new Rental(new RegularMovie("Plan 9 from Outer Space", Movie.REGULAR), 1));
-		customer.addRental(new Rental(new RegularMovie("8 1/2", Movie.REGULAR), 2));
-		customer.addRental(new Rental(new RegularMovie("Eraserhead", Movie.REGULAR), 3));
+		customer.addRental(new Rental(new Movie("Plan 9 from Outer Space", Movie.REGULAR), 1));
+		customer.addRental(new Rental(new Movie("8 1/2", Movie.REGULAR), 2));
+		customer.addRental(new Rental(new Movie("Eraserhead", Movie.REGULAR), 3));
 		
 		assertEquals(
 			"Rental Record for Customer\n" +
